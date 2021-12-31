@@ -1,0 +1,88 @@
+.main {
+    padding: 50px 0;
+    background-color: rgb(243, 243, 243);
+
+    &__wrap {
+        letter-spacing: $letter-spc;
+        margin: 0 -15px;
+        position: relative;
+    }
+    
+    &__text {
+        display: block;
+        overflow: hidden;
+        letter-spacing: normal;
+
+        &-title {
+            text-align: center;
+            margin: 20px 0;
+            font: $h2-font;
+        }
+
+        &-descr {
+            margin: 30px 0;
+            font-weight: 300;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        margin: 30px 0 120px;
+
+        &-img {
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 72%;
+            opacity: 1;
+            height: 480px;
+            background-position: 50%;
+            background-color: $black;
+            box-shadow: $btn-box-shadow;
+            transition: all .35s ease;
+
+            &:before {
+                content: " ";
+                transform-origin: bottom right;
+                display: block;
+                position: absolute;
+                background: linear-gradient(90deg, rgba(6,0,120,0.5872724089635855) 0%, rgba(9,9,121,0.623686974789916) 2%, rgba(0,170,255,0.5396533613445378) 100%);
+                top: 0; right: 0; bottom: 0; left: 0;
+                inset: 0 0 0 0;
+                z-index: 1;
+                transition: transform .3s ease;
+                transform: scaleX(0);
+            }
+
+            &:hover::before {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+
+        &-text {
+            letter-spacing: normal;
+            display: block;
+            position: absolute;
+            top: 25%;
+            left: 55%;
+
+            &-title {
+                color: $white;
+                font: $h2-font
+            }
+        }
+    }    
+}
+
+
+
+        // &:hover {
+        //     transform: translateX(25px);
+        // }
+
+        
