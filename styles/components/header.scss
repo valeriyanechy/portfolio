@@ -85,7 +85,7 @@
         left: 0;
         top: 0;
         position: absolute;
-        background: url(../../images/example.png) no-repeat left center / cover;
+        background: url(../../images/ex3.png) no-repeat left center / cover;
     }    
 
     &__title {
@@ -131,7 +131,7 @@
             transition: $trs;
 
             &:hover {
-                color: $blue;
+                color: $purple;
             }
         }
     }
