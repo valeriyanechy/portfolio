@@ -16,6 +16,31 @@
     background-color: $white;
     transition: $trs;
 
+    &-items {
+        font-family: $main-ff;
+        font-size: 15px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        width: 145px;
+        height: 40px;
+        font-weight: 500;
+        border-radius: 10px 10px;
+        padding: 5px 5px;
+        border: 1px solid $blue;
+        color: $white;
+        background-color: $blue;
+        transition: $trs;
+
+        &:hover {
+            box-shadow: 0px 7px 10px rgba(0, 26, 255, 0.301);
+            background-color: $white;
+            color: $black;
+        }
+    }
+
     &:hover {
         box-shadow: 0px 7px 10px rgba(0, 26, 255, 0.301);
         background-color: $blue;

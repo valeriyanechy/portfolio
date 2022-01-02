@@ -76,38 +76,43 @@
                     </div>
                     <ul class="main__card">
                         <li class="main__item">
-                            <a href="#" id="project1" style="background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(./images/project1.png);" itemprop="url" class="main__item-img"></a>
-                            <div class="main__item-text">
-                                <h2 class="main__item-text-title">Travel Ukraine</h2>
-                                <p class="main__item-text-descr">Traveling blog about Ukraine</p>
-                                <div class="main__item-text-btn">
-                                    <a href="#" class="btn_sec">View More</a>
+                            <div class="main__item-img">
+                                <a href="https://valeriyanechy.github.io/kyiv-blog/" id="project1" itemprop="url" class="main__item-img-image"></a>
+                                <span>01</span>
+                                <div class="main__item-text">
+                                    <h2 class="main__item-text-title">Travel Ukraine</h2>
+                                    <p class="main__item-text-descr">Traveling blog about Ukraine</p>
+                                    <div class="main__item-text-btn">
+                                        <a href="https://valeriyanechy.github.io/kyiv-blog/" class="btn-items">View More</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="main__item">
-                            <a href="#" id="project1" style="background-image: url(./images/project1.png);" itemprop="url"
-                                class="main__item-img">
-                                <!-- <div class="main__item-text">
-                                        <h2 class="main__item-text-title">Travel Ukraine</h2>
-                                        <p class="main__item-text-descr">Traveling blog about Ukraine</p>
-                                        <div class="main__item-text-btn">
-                                            <a href="#" class="btn_sec">View More</a>
-                                        </div>
-                                     </div> -->
-                            </a>
+                            <div class="main__item-img2">
+                                <a href="https://valeriyanechy.github.io/fresh/" id="project2" itemprop="url" class="main__item-img-image"></a>
+                                <span>02</span>
+                                <div class="main__item-text">
+                                    <h2 class="main__item-text-title">Fresh</h2>
+                                    <p class="main__item-text-descr">Website to buy fruits & veggies</p>
+                                    <div class="main__item-text-btn">
+                                        <a href="https://valeriyanechy.github.io/fresh/" class="btn-items">View More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="main__item">
-                            <a href="#" id="project1" style="background-image: url(./images/project1.png);" itemprop="url"
-                                class="main__item-img">
-                                <!-- <div class="main__item-text">
-                                        <h2 class="main__item-text-title">Travel Ukraine</h2>
-                                        <p class="main__item-text-descr">Traveling blog about Ukraine</p>
-                                        <div class="main__item-text-btn">
-                                            <a href="#" class="btn_sec">View More</a>
-                                        </div>
-                                    </div> -->
-                            </a>
+                            <div class="main__item-img3">
+                                <a href="https://valeriyanechy.github.io/Trevland/" id="project3" itemprop="url" class="main__item-img-image"></a>
+                                <span>03</span>
+                                <div class="main__item-text">
+                                    <h2 class="main__item-text-title">Trevland</h2>
+                                    <p class="main__item-text-descr">Travel blog</p>
+                                    <div class="main__item-text-btn">
+                                        <a href="https://valeriyanechy.github.io/Trevland/" class="btn-items">View More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -116,13 +121,13 @@
     </div>
 
     <script>
-        const bg = document.querySelector('.header__image');
-            const windowWidth = window.innerWidth / 4;
-            const windowHeight = window.innerHeight / 4;
+        var bg = document.querySelector('.header__image');
+            var windowWidth = window.innerWidth / 5;
+            var windowHeight = window.innerHeight / 5;
 
             bg.addEventListener('mousemove', (e) => {
-                const mouseX = e.clientX / windowWidth;
-                const mouseY = e.clientY / windowHeight;
+                var mouseY = e.clientX / windowHeight;
+                var mouseX = e.clientY / windowWidth;
 
                 bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
             });

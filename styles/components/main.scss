@@ -30,7 +30,7 @@
     &__item {
         margin: 30px 0 120px;
 
-        &-img {
+        &-img, &-img2, &-img3 {
             display: block;
             position: relative;
             margin-left: auto;
@@ -41,9 +41,31 @@
             opacity: 1;
             height: 480px;
             background-position: 50%;
-            background-color: $black;
             box-shadow: $btn-box-shadow;
             transition: all .35s ease;
+
+            span {
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                letter-spacing: normal;
+                top: -50px;
+                right: -33px;
+                font-size: 140px;
+                font-weight: 600;
+                color: $white;
+                transform: $trs;
+            }
+
+            &:hover::before {
+                transform: scaleX(0);
+                transform-origin: bottom right;
+            }
+
+            &:hover::before {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
 
             &:before {
                 content: " ";
@@ -53,36 +75,58 @@
                 background: linear-gradient(90deg, rgba(6,0,120,0.5872724089635855) 0%, rgba(9,9,121,0.623686974789916) 2%, rgba(0,170,255,0.5396533613445378) 100%);
                 top: 0; right: 0; bottom: 0; left: 0;
                 inset: 0 0 0 0;
-                z-index: 1;
                 transition: transform .3s ease;
                 transform: scaleX(0);
             }
 
-            &:hover::before {
-                transform: scaleX(1);
-                transform-origin: bottom left;
+            &:hover span {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1.1);
             }
+        }
+
+        &-img {
+            background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(/images/kyiv\ copy.jpeg);
+        }
+
+        &-img2 {
+            background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(/images/project2.png);
+        }
+
+        &-img3 {
+            background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(/images/project3.png);
         }
 
         &-text {
             letter-spacing: normal;
             display: block;
             position: absolute;
-            top: 25%;
-            left: 55%;
+            top: 60%;
+            left: 5%;
+            transition: $trs;
 
             &-title {
                 color: $white;
                 font: $h2-font
             }
+
+            &-descr {
+                padding: 10px 0;
+                color: $white;
+                font-size: 15px;
+                font-style: italic;
+            }
+
+            &-btn {
+                padding-top: 10px;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }    
 }
-
-
-
-        // &:hover {
-        //     transform: translateX(25px);
-        // }
 
         
