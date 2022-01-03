@@ -176,7 +176,6 @@ a {
   font: 700 50px/0.9 "Playfair Display", Arial, Helvetica, sans-serif;
   animation: write 2s steps(19), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
-  overflow: hidden;
 }
 .header__descr {
   z-index: 1;
