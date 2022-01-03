@@ -313,6 +313,7 @@ a {
 }
 .main__item-img-image {
   filter: brightness(50%);
+  z-index: -99;
 }
 .main__item-img span {
   position: absolute;
@@ -323,6 +324,7 @@ a {
   right: -33px;
   font-size: 140px;
   font-weight: 600;
+  z-index: 99;
   color: #fff;
   transform: all 0.3s;
 }
@@ -347,6 +349,7 @@ a {
   inset: 0 0 0 0;
   transition: transform 0.3s ease;
   transform: scaleX(0);
+  z-index: 99;
 }
 .main__item-img:hover span {
   visibility: visible;
@@ -359,6 +362,7 @@ a {
   position: absolute;
   top: 60%;
   left: 5%;
+  z-index: 99;
   transition: all 0.3s;
 }
 .main__item-text-title {
@@ -385,7 +389,7 @@ a {
 .skills__wrap {
   width: 90%;
   max-width: 900px;
-  margin: 3em auto;
+  margin: 10px auto;
   text-align: center;
 }
 .skills__info {
@@ -418,7 +422,7 @@ a {
   height: 70px;
   background: #fff;
   position: absolute;
-  margin: 23px;
+  margin: 29px;
   z-index: 10;
   border-radius: 30%;
   box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);

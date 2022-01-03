@@ -46,6 +46,7 @@
 
             &-image {
                 filter: brightness(50%);
+                z-index: -99;
             }
 
             span {
@@ -57,6 +58,7 @@
                 right: -33px;
                 font-size: 140px;
                 font-weight: 600;
+                z-index: 99;
                 color: $white;
                 transform: $trs;
             }
@@ -81,6 +83,7 @@
                 inset: 0 0 0 0;
                 transition: transform .3s ease;
                 transform: scaleX(0);
+                z-index: 99;
             }
 
             &:hover span {
@@ -96,6 +99,7 @@
             position: absolute;
             top: 60%;
             left: 5%;
+            z-index: 99;
             transition: $trs;
 
             &-title {
