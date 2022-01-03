@@ -97,6 +97,7 @@
         font: $h1-font;
         animation: write 2s steps(19), blink .5s step-end infinite alternate;
         white-space: nowrap;
+        overflow: hidden;
         // border-right: 3px solid;
     }
 
@@ -104,6 +105,7 @@
         z-index: 1;
         margin-bottom: 30px;
         max-width: 210px;
+        font-size: 20px;
         transition: $trs;
 
         &:hover {
