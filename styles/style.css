@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
 * {
   box-sizing: border-box;
@@ -39,6 +40,10 @@ a {
 
 .container {
   max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container2 {
   margin: 0 auto;
 }
 
@@ -170,7 +175,7 @@ a {
   max-width: 575px;
   height: 50px;
   width: 22ch;
-  font: 700 50px/0.9 "Josefin Sans", Arial, Helvetica, sans-serif;
+  font: 600 50px/0.9 "Josefin Sans", Arial, Helvetica, sans-serif;
   animation: write 2s steps(19), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -179,7 +184,8 @@ a {
   z-index: 1;
   margin-bottom: 30px;
   max-width: 210px;
-  font-size: 20px;
+  font-size: 18px;
+  font-style: italic;
   transition: all 0.3s;
 }
 .header__descr:hover {
@@ -545,6 +551,134 @@ a {
 }
 #btn_back-to-top:hover span {
   color: #fff;
+}
+
+.header2__wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header2__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0 137px;
+}
+.header2__nav-list {
+  display: flex;
+}
+.header2__nav-item {
+  padding: 0 25px;
+}
+.header2__nav-item-link {
+  position: relative;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.header2__nav-item-link:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #00a1ff;
+  transition: all 0.3s;
+}
+.header2__nav-item-link:hover::before {
+  width: 50%;
+}
+.header2__nav-item-link:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #00a1ff;
+  transition: all 0.3s;
+}
+.header2__nav-item-link:hover::after {
+  width: 50%;
+}
+.header2__logo {
+  z-index: 1;
+  line-height: 0;
+}
+.header2__logo-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.header2__wrap2 {
+  letter-spacing: -0.36em;
+  margin: 30px 50px;
+}
+.header2__col {
+  width: 50%;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+.header2__info {
+  margin: 0 20px;
+  background-color: transparent;
+}
+.header2__title {
+  margin-top: 60px;
+  text-align: left;
+  font: 600 50px/0.9 "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+.header2__descr {
+  max-width: 500px;
+  margin: 60px 0;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.header2__bg-text {
+  position: relative;
+  text-align: right;
+  z-index: -1;
+  bottom: 265px;
+  left: 10%;
+  height: 170px;
+  width: 495px;
+  font-size: 150px;
+  color: rgba(0, 0, 0, 0.1);
+}
+.header2__image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 0 30px;
+}
+.header2__image img {
+  margin: 0 30px;
+}
+.header2__socials {
+  z-index: 1;
+  position: absolute;
+  right: 5%;
+  bottom: 35%;
+}
+.header2__socials svg {
+  width: 25px;
+  display: block;
+  margin: 25px 5px;
+  transition: all 0.3s;
+}
+.header2__socials svg:hover {
+  color: #910aff;
+}
+
+.footer2 {
+  padding: 4% 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
