@@ -10,12 +10,13 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <canvas></canvas>
             <div class="container">
                 <div class="header__wrap">
                     <div class="header__nav">
                         <div class="header__logo">
                             <a href="#" class="header__logo-link">
-                                <img src="./images/logo.png" alt="">
+                                <img src="./images/logo-w.png" width="70px" height="70px">
                             </a>
                         </div>
                         <ul class="header__nav-list">
@@ -23,17 +24,47 @@
                                 <a href="./about-me.html" class="header__nav-item-link">About</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">Projects</a>
+                                <a href="#project_anchor" class="header__nav-item-link">Projects</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">Contact</a>
+                                <a id="btn-contact" class="header__nav-item-link">Contact</a>
                             </li>
                         </ul>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-content-left">
+                                    <img src="./images/beach.jpg" alt="picture">
+                                </div>
+                                <div class="modal-content-right">
+                                    <form id="contact" action="" method="post">
+                                        <div class="modal-header">
+                                            <h1>Let's talk!</h1>
+                                            <span class="close">&times;</span>
+                                        </div>
+                                        <fieldset>
+                                            <input placeholder="Name *" type="text" tabindex="1" required autofocus>
+                                        </fieldset>
+                                        <fieldset>
+                                            <input placeholder="Email Address *" type="email" tabindex="2" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <input placeholder="Phone Number" type="tel" tabindex="3" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <input placeholder="Web Site URL" type="url" tabindex="4" optional>
+                                        </fieldset>
+                                        <fieldset>
+                                            <textarea placeholder="Type your message here.... *" tabindex="5" required></textarea>
+                                        </fieldset>
+                                        <fieldset>
+                                            <button name="submit" type="submit" id="contact-submit" class="btn" data-submit="...Sending">Submit</button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="header__info">
-                        <div class="header__image">
-                            <img src="./images/ex3.png" height="720px" width="1400px">
-                        </div>
                         <h1 class="header__title">Valeriya Nechyporuk</h1>
                         <p class="header__descr">Front-end Developer</p>
                         <div class="header__button">
@@ -73,7 +104,7 @@
             <div class="container">
                 <div class="main__wrap">
                     <div class="main__text">
-                        <h2 class="main__text-title">Projects</h2>
+                        <h2 id="project_anchor" class="main__text-title">Projects</h2>
                         <p class="main__text-descr">Stuff I've created</p>
                     </div>
                     <ul class="main__card">
@@ -152,6 +183,11 @@
                             <img src="./images/sass.png" width="40" height="40">
                         </div>
                     </article>
+                    <article class="skills__badge purple">
+                        <div class="skills__rounded">
+                            <img src="./images/bootstrap.png" width="50" height="40" style="left: 16%;">
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -160,7 +196,7 @@
                 <div class="footer__wrap">
                     <div class="footer__logo">
                         <a href="#" class="footer__logo-link">
-                            <img src="./images/logo.png" alt="">
+                            <img src="./images/logo-b.png" width="70px" height="70px">
                         </a>
                     </div>
                     <div class="footer__socials">
@@ -217,6 +253,8 @@
     </div>
 
     <script src="./script/bg-mousemove.js"></script>
+    <!-- <script src="./script/animated-mouse.js"></script> -->
     <script src="./script/back-top.js"></script>
+    <script src="./script/contact.js"></script>
 </body>
 </html>

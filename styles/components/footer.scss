@@ -1,6 +1,6 @@
 .footer {
     padding: 6% 0;
-    background-color: rgb(181 180 180 / 65%);
+    background-color: $white;
     width: 100%;
 
     &__wrap {
@@ -17,7 +17,7 @@
             display: block;
             position: relative;
             overflow: hidden;
-            margin: 0 auto 12px;
+            margin-bottom: 30px;
         }
     }
 
@@ -40,7 +40,7 @@
 
             svg {
                 &:hover {
-                    color: $purple;
+                    color: $pink;
                 }
             }
         }
