@@ -249,6 +249,24 @@
         top: 75px;
         right: 90px;
     }
+
+    &__item1 p, &__item2 p, &__item3 p {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
+    }
+
+    &__item1::after, &__item2::after, &__item3::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: $pink;
+        animation: rev-block 1.5s cubic-bezier(0.2, 1, 0.2, 1) forwards;
+        animation-delay: 1s;
+    }
 }
 
 .footer2 {

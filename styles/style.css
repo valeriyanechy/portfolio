@@ -552,8 +552,8 @@ canvas {
   position: fixed;
   bottom: 30px;
   right: 35px;
-  width: 50px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   display: none;
 }
@@ -562,7 +562,11 @@ canvas {
 }
 #btn_back-to-top span {
   color: #00a1ff;
-  top: 2px;
+}
+#btn_back-to-top span svg {
+  position: absolute;
+  top: 4px;
+  left: 11%;
 }
 #btn_back-to-top:hover span {
   color: #fff;
@@ -784,6 +788,22 @@ canvas {
   position: absolute;
   top: 75px;
   right: 90px;
+}
+.prefooter__item1 p, .prefooter__item2 p, .prefooter__item3 p {
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 1.4s;
+}
+.prefooter__item1::after, .prefooter__item2::after, .prefooter__item3::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #ff84cc;
+  animation: rev-block 1.5s cubic-bezier(0.2, 1, 0.2, 1) forwards;
+  animation-delay: 1s;
 }
 
 .footer2 {

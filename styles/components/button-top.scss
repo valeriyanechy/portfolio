@@ -2,8 +2,8 @@
     position: fixed;
     bottom: 30px;
     right: 35px;
-    width: 50px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     display: none;
 
@@ -13,7 +13,12 @@
 
     span {
         color: $blue;
-        top: 2px;
+
+        svg {
+            position: absolute;
+            top: 4px;
+            left: 11%;
+        }
     }
 
     &:hover span{
