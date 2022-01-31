@@ -891,7 +891,7 @@ canvas {
   align-items: center;
 }
 
-#phone svg, #email svg, #location svg {
+#phone svg, #email svg, #location svg, #resume svg {
   fill: #ff84cc;
 }
 
