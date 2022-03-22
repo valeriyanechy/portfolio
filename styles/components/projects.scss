@@ -1,0 +1,63 @@
+.projects {
+    padding: 30px;
+
+    &__col {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+
+    }
+
+    &__card {
+        width: 300px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 15px 25px;
+        margin: 10px 25px;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.card1 {
+    background-image: url(/images/salon2.jpeg);
+}
+
+.card2 {
+    background-image: url(/images/skykons.jpeg);
+}
+
+.card3 {
+    background-image: url(/images/salon2.jpeg);
+}
+
+.card4 {
+    background-image: url(/images/salon2.jpeg);
+}
+
+.card5 {
+    background-image: url(/images/salon2.jpeg);
+}
+
+.card6 {
+    background-image: url(/images/salon2.jpeg);
+}
+
+.card7 {
+    background-image: url(/images/salon2.jpeg);
+}
+
+.card8 {
+    background-image: url(/images/salon2.jpeg);
+}
+
+.card9 {
+    background-image: url(/images/salon2.jpeg);
+}
