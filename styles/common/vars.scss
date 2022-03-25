@@ -25,3 +25,11 @@ $h3-font: 400 18px/1.5 $main-ff;
 
 $trs: all 0.3s;
 $letter-spc: -0.36em;
+
+$bright-color: #fff;
+
+@mixin bottom {
+ position: absolute;
+ right: 0;
+ left: 0;
+}
