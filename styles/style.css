@@ -284,6 +284,11 @@ canvas {
   position: fixed;
 }
 
+@media (max-width: 1024px) {
+  .header__wrap {
+    padding: 0 30px;
+  }
+}
 .main {
   padding: 50px 0;
   background-color: #f3f3f3;
@@ -407,6 +412,11 @@ canvas {
   left: 43%;
 }
 
+@media (max-width: 1024px) {
+  .main__item-img {
+    width: 82%;
+  }
+}
 .skills {
   padding: 20px 0;
   background-color: #000;
@@ -706,10 +716,10 @@ canvas {
   position: relative;
   text-align: right;
   z-index: -1;
-  bottom: 300px;
+  bottom: 365px;
   left: 10%;
   height: 170px;
-  width: 495px;
+  width: 455px;
   font-size: 150px;
   color: rgba(0, 0, 0, 0.1);
 }
@@ -802,7 +812,7 @@ canvas {
 .prefooter__item1 p, .prefooter__item2 p, .prefooter__item3 p {
   opacity: 0;
   animation: appear-text 0.0001s linear forwards;
-  animation-delay: 1.4s;
+  animation-delay: 10s;
 }
 .prefooter__item1::after, .prefooter__item2::after, .prefooter__item3::after {
   content: "";
@@ -813,7 +823,7 @@ canvas {
   height: 100%;
   background: #ff84cc;
   animation: rev-block 1.5s cubic-bezier(0.2, 1, 0.2, 1) forwards;
-  animation-delay: 1s;
+  animation-delay: 9s;
 }
 
 .footer2 {
@@ -941,6 +951,24 @@ canvas {
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 1024px) {
+  .header2__bg-text {
+    width: 365px;
+    bottom: 350px;
+    font-size: 120px;
+  }
+
+  .header2__info {
+    height: 620px;
+  }
+
+  .header2__bg-text2 {
+    width: 425px;
+    height: 160px;
+    bottom: 365px;
+    font-size: 118px;
   }
 }
 .contact {
