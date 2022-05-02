@@ -28,6 +28,27 @@
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
         transition: $trs;
 
+        &-img {
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &-images {
+                filter: brightness(50%);
+
+                img {
+                    border-radius: 10px;
+                }
+
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+
         &-text {
             background-color: $white;
             border-radius: 0 0 10px 10px;
@@ -96,30 +117,6 @@
         text-align: center;
         padding: 30px;
     }
-}
-
-.card1 {
-    background-image: url(/images/salon2.jpeg);
-}
-
-.card2 {
-    background-image: url(/images/skykons.jpeg);
-}
-
-.card3 {
-    background-image: url(/images/kyiv.jpeg);
-}
-
-.card4 {
-    background-image: url(/images/fruits-fresh.png);
-}
-
-.card5 {
-    background-image: url(/images/trevland1.png);
-}
-
-.card6 {
-    background-image: url(/images/pong-game.png);
 }
 
 @media(max-width: 768px) {
