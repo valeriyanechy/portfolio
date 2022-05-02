@@ -121,3 +121,40 @@
 .card6 {
     background-image: url(/images/pong-game.png);
 }
+
+@media(max-width: 768px) {
+    .projects__card {
+        margin: 10px 5px;
+    }
+}
+
+@media(max-width: 425px) {
+    .footer2__wrap {
+        width: 425px;
+    }
+}
+
+@media(max-width: 375px) {
+    .projects__card {
+        width: 265px;
+    }
+
+    .footer2__wrap {
+        width: 375px;
+    }
+
+    .footer2__contact {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 320px) {
+    .projects__card {
+        width: 220px;
+    }
+
+    .footer2__wrap {
+        width: 320px;
+        padding: 0 2px;
+    }
+}

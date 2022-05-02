@@ -84,3 +84,28 @@
         width: 50%;
     }
 }
+
+@media(max-width: 768px) {
+    .footer__wrap {
+        width: 768px;
+    }
+}
+
+@media(max-width: 425px) {
+    .footer__wrap {
+        width: 425px;
+    }
+}
+
+@media(max-width: 375px) {
+    .footer__wrap {
+        width: 375px;
+    }
+}
+
+@media(max-width: 320px) {
+    .footer__wrap {
+        width: 320px;
+        padding: 0 2px;
+    }
+}
