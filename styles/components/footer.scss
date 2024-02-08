@@ -1,0 +1,111 @@
+.footer {
+    padding: 50px 0;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+
+    &__wrap {
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    &__logo {
+        z-index: 1;
+        line-height: 0;
+        text-align: center;
+
+        &-link {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__socials {
+        position: relative;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    &__links {
+        display: block;
+        padding: 0;
+        margin: 10px 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            padding: 0 20px;
+            transition: $trs;
+
+            svg {
+                &:hover {
+                    color: $pink;
+                }
+            }
+        }
+    }
+
+    &__contact {
+        margin: 20px 0;
+    }
+}
+
+.contact-link {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: $blue;
+        transition: $trs;
+    }
+
+    &:hover::before {
+        width: 50%;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: $blue;
+        transition: $trs;
+    }
+
+    &:hover::after {
+        width: 50%;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer__wrap {
+        width: 768px;
+    }
+}
+
+@media(max-width: 425px) {
+    .footer__wrap {
+        width: 425px;
+    }
+}
+
+@media(max-width: 375px) {
+    .footer__wrap {
+        width: 375px;
+    }
+}
+
+@media(max-width: 320px) {
+    .footer__wrap {
+        width: 320px;
+        padding: 0 2px;
+    }
+}
