@@ -1,36 +1,26 @@
-$black: #000;
-$white: #fff;
-$red: rgba(255, 87, 87, 0.925);
-$orange: rgb(238, 144, 2);
-$yellow: rgb(255, 230, 0);
-$green: rgb(70, 163, 70);
-$blue: #00a1ff;
-$purple: rgb(145, 10, 255);
-$pink: rgb(255, 132, 204);
-$gray: rgba($black, 0.2);
-$yellow: #FBEC5D;
-$grey: rgb(86, 86, 86);
-$dark-blue: rgb(67, 113, 159);
+$black: #1c1c1c;
+$white: #f3f3f3;
+$blue: #2E68F6;
+$yellow: #FFF3D9;
+$bg-color: #FDF9EF;
+$blue-off: #2e67f630;
 
-
-$title-color: $black;
-$text-color: rgba($black, 0.9);
-$text-color-2: $white;
+$title-color: $blue;
+$text-color: $blue;
+$text-color-2: $blue;
 
 $box-s: 0 20px 80px 0 rgb(0 0 0 / 45%);
 
-$second-ff: "Roboto Mono", Arial, Helvetica, sans-serif;
-$main-ff: 'Josefin Sans', Arial, Helvetica, sans-serif;
+$second-ff: 'Satoshi Light', Arial, Helvetica, sans-serif;
+$main-ff: 'Melodrama', Arial, Helvetica, sans-serif;
 
-$main-font: 400 20px/1.6 $main-ff;
-$h1-font: 600 60px/0.9 $main-ff;
-$h2-font: 600 40px/1.3 $main-ff;
-$h3-font: 400 18px/1.5 $main-ff;
+$main-font: 300 18px/1.2 $second-ff;
+$h1-font: 500 70px/1.2 $main-ff;
+$h2-font: 500 60px/1.2 $main-ff;
+$h3-font: 300 18px/1.2 $second-ff;
 
 $trs: all 0.3s;
 $letter-spc: -0.36em;
-
-$bright-color: #fff;
 
 @mixin bottom {
  position: absolute;

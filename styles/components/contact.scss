@@ -66,15 +66,15 @@
 }
 
 .screen-header-button.close {
-  background: $red;
+  background: $blue;
 }
 
 .screen-header-button.maximize {
-  background: $yellow;
+  background: $blue;
 }
 
 .screen-header-button.minimize {
-  background: $green;
+  background: $blue;
 }
 
 .screen-header-right {
@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  color: $purple;
+  color: $blue;
   font-size: 26px;
 }
 
@@ -119,7 +119,7 @@
   bottom: -10px;
   width: 35px;
   height: 4px;
-  background:$purple;
+  background:$blue;
 }
 
 .app-contact {
@@ -164,16 +164,16 @@
 
 .app-form-button {
   background: none;
-  border: 1px solid $purple;
+  border: 1px solid $blue;
   border-radius: 3px;
   padding: 5px;
-  color: $purple;
+  color: $blue;
   font-size: 15px;
   cursor: pointer;
 }
 
 .app-form-button:hover {
-  background-color: $purple;
+  background-color: $blue;
   color: $white;
 }
 

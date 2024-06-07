@@ -11,5 +11,14 @@
 @import './components/contact.scss';
 @import './components/projects.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap');
+@font-face {
+    font-family: 'Melodrama';
+    src: url(/fonts/Melodrama-Medium.ttf);
+    src: url(/fonts/Melodrama-Regular.ttf);
+    src: url(/fonts/Melodrama-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Satoshi Light';
+    src: url(/fonts/Satoshi-Light.ttf);
+}

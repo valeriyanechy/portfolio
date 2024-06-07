@@ -1,4 +1,4 @@
-const STAR_COLOR = '#fff';
+const STAR_COLOR = '#2e67f650';
 const STAR_SIZE = 2;
 const STAR_MIN_SCALE = 0.2;
 const OVERFLOW_THRESHOLD = 50;
