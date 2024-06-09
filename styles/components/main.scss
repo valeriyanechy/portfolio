@@ -120,6 +120,12 @@
     }
 }
 
+@media(max-width: 1010px) {
+    .main__item-text-title {
+        font-size: 35px;
+    }
+}
+
 @media(max-width: 769px) {
     .main__text-descr {
         padding: 0 20px;
