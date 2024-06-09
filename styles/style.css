@@ -125,7 +125,7 @@ a {
   flex-direction: column;
   justify-content: center;
   color: #f3f3f3;
-  margin-top: 190px;
+  margin-top: 180px;
 }
 .header__title {
   color: #2E68F6;
@@ -921,11 +921,15 @@ canvas {
 }
 @font-face {
   font-family: "Melodrama";
-  src: url(/fonts/Melodrama-Medium.ttf);
-  src: url(/fonts/Melodrama-Regular.ttf);
-  src: url(/fonts/Melodrama-Semibold.ttf);
+  src: url(/fonts/Melodrama-Medium.woff2) format(woff2);
+  src: url(/fonts/Melodrama-Regular.woff2) format(woff2);
+  src: url(/fonts/Melodrama-Semibold.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Satoshi Light";
-  src: url(/fonts/Satoshi-Light.ttf);
+  src: url(/fonts/Satoshi-Light.woff2) format(woff2);
+  font-weight: lighter;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */
