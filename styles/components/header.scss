@@ -32,12 +32,17 @@
         justify-content: center;
         color: $white;
         margin-top: 180px;
+        text-align: center;
     }
 
     &__title {
         color: $blue;
         font: $h1-font;
         padding-bottom: 20px;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
     }
 
     &__descr {
@@ -46,6 +51,9 @@
         position: relative;
         margin-bottom: 30px;
         font-size: 30px;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     &__text {
@@ -146,5 +154,27 @@ canvas {
 @media(max-width: 320px) {
     .header__title {
         font-size: 28px;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    background-color: #2E68F6;
+    width: 2px;
+    height: 1.2em;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
