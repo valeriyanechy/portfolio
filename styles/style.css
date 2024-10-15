@@ -126,11 +126,16 @@ a {
   justify-content: center;
   color: #f3f3f3;
   margin-top: 180px;
+  text-align: center;
 }
 .header__title {
   color: #2E68F6;
   font: 500 70px/1.2 "Melodrama", Arial, Helvetica, sans-serif;
   padding-bottom: 20px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
 .header__descr {
   color: #2E68F6;
@@ -138,6 +143,9 @@ a {
   position: relative;
   margin-bottom: 30px;
   font-size: 30px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .header__text {
   padding-top: 50px;
@@ -228,6 +236,25 @@ canvas {
 @media (max-width: 320px) {
   .header__title {
     font-size: 28px;
+  }
+}
+.cursor {
+  display: inline-block;
+  background-color: #2E68F6;
+  width: 2px;
+  height: 1.2em;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .main {
